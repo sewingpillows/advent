@@ -5,6 +5,7 @@ import re
 
 
 def validPassport(p):
+    # trying out lambda because why not
     rules = {
         'ecl': (lambda a: len(re.findall('^amb$|^blu$|^brn$|^gry$|^grn$|^hzl$|^oth$', a)) == 1),
         'iyr': (lambda a: int(a) >= 2010 and int(a) <= 2020),

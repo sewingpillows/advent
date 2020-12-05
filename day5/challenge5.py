@@ -1,12 +1,7 @@
 
 import sys
 import fileinput
-from typing import List
 import re
-import functools 
-import itertools
-import operator ## only needed if want to play with operators
-from bisect import bisect_left 
 
 
 def bitoperator(string, char, value):
