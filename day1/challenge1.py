@@ -8,6 +8,8 @@ def process_input():
     return [int(line) for line in fileinput.input()]
 
 def find_pair(args, key):
+    #rather than run through entire possibly combinations, 
+    #use the sorted list to reduce comparison
     less = 0
     end = len(args)-1
     while (less < end):
