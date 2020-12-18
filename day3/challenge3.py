@@ -3,9 +3,6 @@ import sys
 import fileinput
 import re
 
-def process_input():
-    return [line.rstrip() for line in fileinput.input()]
-
 def ski(down, over, hill):
     width = len(hill[0])
     tree = 0
