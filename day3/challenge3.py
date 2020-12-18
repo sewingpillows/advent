@@ -6,7 +6,7 @@ import re
 def ski(down, over, hill):
     width = len(hill[0])
     tree = 0
-    for i in range(1*down, len(hill), down):
+    for i in range(down, len(hill), down):
         index = int(i*(over/down)) % width
         #print(hill[i], index, hill[i][index],i)
         if hill[i][index] == '#':
