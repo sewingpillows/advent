@@ -43,7 +43,6 @@ def part2(mapping, key):
     if key not in mapping:
         return 1
     final_count = 0
-    item = mapping[key]
     for count, color in mapping[key]:
         final_count = int(count) + int(count)*part2(mapping, color) + final_count
     return final_count
